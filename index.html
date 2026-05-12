@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Dạng Thọ 2   | Developer Fresher</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+      .hero-section {
+        background: linear-gradient(135deg, #0d6efd 0%, #003d99 100%);
+        color: white;
+        padding: 100px 0;
+      }
+      .card {
+        border: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .skill-badge {
+        background-color: #e9ecef;
+        color: #0d6efd;
+        border-radius: 20px;
+        padding: 5px 15px;
+        display: inline-block;
+        margin: 5px;
+        font-weight: 500;
+      }
+      .section-title {
+        border-left: 5px solid #0d6efd;
+        padding-left: 15px;
+        margin-bottom: 30px;
+      }
+      .btn {
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+      }
+      footer a {
+        margin: 0 30px;
+        transition: 0.3s;
+      }
+
+      footer a:hover {
+        color: #0d6efd !important;
+      }
+      main a:hover {
+        color: rgb(193, 11, 23) !important;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold red-forest" href="#">THO NGUYEN</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link blue-joey" href="#about">Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle blue-joey"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Học vấn</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item red-forest" href="#grades"
+                    >Bảng điểm</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link blue-joey" href="#skills">Kỹ năng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link blue-joey" href="#contact">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="./img/hinh2.jpg" class="d-block w-100" />
+
+            <div class="overlay"></div>
+
+            <div class="carousel-caption text-center">
+              <h1 class="fw-bold">Nguyễn Dạng Thọ</h1>
+              <p class="lead">Developer Fresher | Web Developer</p>
+              <a href="#about" class="btn btn-primary px-4">Giới thiệu </a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="./img/hinh2.jpg" class="d-block w-100" />
+
+            <div class="overlay"></div>
+
+            <div class="carousel-caption text-center">
+              <h1 class="fw-bold">Kỹ năng & Công nghệ</h1>
+              <p>HTML, CSS, Bootstrap, React, TypeScript</p>
+              <a href="#skills" class="btn btn-outline-light px-4"
+                >Xem kỹ năng</a
+              >
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="https://picsum.photos/1920/900?3" class="d-block w-100" />
+
+            <div class="overlay"></div>
+
+            <div class="carousel-caption text-center">
+              <h1 class="fw-bold">Sẵn sàng làm việc</h1>
+              <p>Tìm kiếm cơ hội Developer Fresher</p>
+              <a href="#contact" class="btn btn-success px-4">Hire Me</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <div class="row">
+        <!-- Cột trái: Thông tin chính -->
+        <div class="col-lg-8" id="about">
+          <h2 class="section-title">Về tôi</h2>
+          <p class="fs-5">
+            Chào bạn! Tôi là một nghiên cứu viên khoa học và là Developer
+            Fresher đam mê giải quyết các vấn đề phức tạp thông qua mã nguồn.
+            Với nền tảng tư duy logic và nghiên cứu, tôi luôn tìm kiếm cơ hội để
+            ứng dụng kiến thức học thuật vào các dự án thực tế.
+          </p>
+
+          <h2 class="section-title mt-5" id="education">Học vấn</h2>
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h5 class="card-title fw-bold">Developer</h5>
+                  <p class="card-text text-muted">Forest Studio</p>
+                </div>
+                <span class="badge bg-primary">Đang thực tập</span>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title fw-bold" id="cunhan">Cử nhân</h5>
+              <p class="card-text text-muted">
+                Trường Đại học Khoa học khoa học tự nhiên
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8" id="about">
+          <div class="card-body">
+            <h5 class="card-title fw-bold" id="grades">🎓 Bảng điểm đại học</h5>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle">
+                <thead class="table-info">
+                  <tr>
+                    <th>Môn học</th>
+                    <th>Tín chỉ</th>
+                    <th>Điểm</th>
+                    <th>Xếp loại</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Lập trình C</td>
+                    <td>3</td>
+                    <td><span class="badge bg-success">9.0</span></td>
+                    <td><span class="badge bg-success">Giỏi</span></td>
+                  </tr>
+
+                  <tr>
+                    <td>Cấu trúc dữ liệu</td>
+                    <td>4</td>
+                    <td>7.2</td>
+                    <td>Khá</td>
+                  </tr>
+
+                  <tr>
+                    <td>Web Development</td>
+                    <td>3</td>
+                    <td>7.0</td>
+                    <td>Khá</td>
+                  </tr>
+
+                  <tr>
+                    <td>Cơ sở dữ liệu</td>
+                    <td>3</td>
+                    <td>7.8</td>
+                    <td>Khá</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- Cột phải: Kỹ năng & Liên hệ -->
+        <div class="col-lg-4">
+          <div class="card mb-4" id="skills">
+            <div class="card-body">
+              <h5 class="card-title mb-4 fw-bold">Kỹ năng</h5>
+              <div>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">Bootstrap 5</span>
+                <span class="skill-badge">Reactjs, Typescript</span>
+                <span class="skill-badge">Web Development</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">FTTx</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-primary text-white p-3" id="contact">
+            <h4 class="fw-bold mb-3">Thông tin liên hệ</h4>
+            <p>
+              <i class="bi bi-envelope-fill me-2"></i> nguyendangtho9@gmail.com
+            </p>
+            <p><i class="bi bi-github me-2"></i> github.com/DangTho0504</p>
+            <div class="d-flex gap-3 fs-4">
+              <a href="https://github.com/" target="_blank" class="text-white"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dang-tho-418478408"
+                target="_blank"
+                class="text-white"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/dangtho0504"
+                target="_blank"
+                class="text-white"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <!-- tạo link face (xóa target sẽ mở cùng tab) -->
+      <a
+        href="https://www.facebook.com/dangtho0504"
+        target="_self"
+        class="text-white text-decoration-none"
+      >
+        <i class="bi bi-facebook"></i> Facebook
+      </a>
+      <p class="mb-0">&copy; 2026 Nguyễn Dạng Thọ. Built with Bootstrap 5.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
