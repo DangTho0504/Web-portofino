@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+
+    <h1>Quản lý nhân viên</h1>
+
+    <!-- tên -->
+    <label>Họ và tên:</label>
+    <input type="text" id="name" placeholder="Nhập tên">
+    <br><br>
+
+    <!-- ngày sinh -->
+     <label>Năm sinh:</label>
+    <input type="date" id="birthday">
+
+    <!-- tuổi -->
+    <input type="text" id="showAge" placeholder="Tuổi" readonly>
+    <br><br>
+
+    <!-- giới tính -->
+    <label>Giới tính:</label>
+
+    <input type="radio" name="gender" value="Nam"> Nam
+
+    <input type="radio" name="gender" value="Nữ"> Nữ
+    <br><br>
+
+    <!-- phòng ban -->
+    <label>Phòng ban:</label>
+    <br>
+
+    <input type="checkbox" value="HR" class="department"> HR
+
+    <input type="checkbox" value="IT" class="department"> IT
+
+    <input type="checkbox" value="Customer Support" class="department">
+    Customer Support
+    <br><br>
+
+    <!-- phone -->
+     <label>Phone:</label>
+    <input type="text" id="phone" placeholder="Số điện thoại">
+    <br><br>
+
+    <!-- địa chỉ -->
+     <label>Address:</label>
+    <input type="text" id="address" placeholder="Địa chỉ">
+    <br><br>
+
+    <!-- nút -->
+    <button id="btn">Add Employee</button>
+
+    <hr>
+
+    <!-- table -->
+    <table border="1" cellpadding="10">
+
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Tuổi</th>
+                <th>Giới tính</th>
+                <th>Phòng ban</th>
+                <th>Phone</th>
+                <th>Địa chỉ</th>
+            </tr>
+        </thead>
+
+        <tbody id="employeeTable">
+
+        </tbody>
+
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
