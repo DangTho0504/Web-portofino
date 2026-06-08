@@ -1,0 +1,66 @@
+/* 1. Đưa dải Header về nền trong suốt, triệt tiêu mọi khoảng cách */
+#header {
+    position: relative;
+    z-index: 999;
+}
+
+.header-main {
+    background-color: rgba(231, 227, 227, 0.95) !important; /* Màu xám trắng nhạt, có độ trong suốt nhẹ giống VinCool */
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 70px !important; /* Định hình chiều cao cố định cho thanh Header */
+}
+
+/* 2. Thiết kế khối LOGO dài ra, có nền xanh Teal và đè hẳn lên Slider */
+.header-main .header-logo {
+    position: relative;
+    z-index: 9999;
+    margin-left: 20px !important;
+}
+
+.header-main .header-logo a {
+    display: block !important;
+    background-color: #007a96 !important; /* Màu xanh thương hiệu của khối Logo mẫu */
+    padding: 15px 20px 25px 20px !important; /* Đẩy cạnh dưới dài xuống sâu hơn dải Header */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15); /* Tạo bóng đổ nhẹ ở đáy Logo */
+    transition: all 0.3s ease;
+}
+
+/* Ép ảnh logo nằm vừa vặn, không bị méo */
+.header-main .header-logo img {
+    max-height: 55px !important; 
+    width: auto !important;
+}
+
+/* 3. Đưa thanh Menu duỗi ngang ngay ngắn bên cạnh Logo */
+.header-main .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    height: 70px !important;
+}
+
+.header-main .nav > li > a {
+    font-family: sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: #333333 !important; /* Chữ menu màu tối thanh lịch */
+    background: transparent !important;
+    padding: 24px 15px !important;
+}
+
+/* Đổi màu chữ sang màu xanh khi hover */
+.header-main .nav > li > a:hover {
+    color: #007a96 !important;
+}
+
+/* 4. Ép cụm Slider trượt thẳng lên trên, dính sát và đụng khít vào đáy Header */
+.home #content {
+    margin-top: -70px !important; /* Bằng chính xác chiều cao của Header để tạo độ khít tuyệt đối */
+    position: relative;
+    z-index: 1;
+}
