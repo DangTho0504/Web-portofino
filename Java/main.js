@@ -1,11 +1,11 @@
 // hiện tuổi tự động
-let birthday = document.getElementById("birthday");
+let birthdayInput = document.getElementById("birthday");
 
-birthday.addEventListener("input", function () {
+birthdayInput.addEventListener("input", function () {
 
     let currentYear = new Date().getFullYear();
 
-    let birthYear = new Date(birthday.value).getFullYear();
+    let birthYear = new Date(birthdayInput.value).getFullYear();
 
     let age = currentYear - birthYear;
 
